@@ -1,0 +1,10 @@
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    height:200px;
+    width: 500px;
+}
+
+p{
+    width:25%;
+}
