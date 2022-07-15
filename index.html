@@ -11,24 +11,24 @@
 
   <title>Portfolio</title>
 </head>
-<body class = "d-flex flex-column min-vh-100">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
+<body>
+  <nav class="position-fixed navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+    <div class = "ms-auto">
       <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">About
+            <a class="nav-link" href="#about">About
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#work">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -37,7 +37,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-1 position-fixed d-none d-sm-block pr-0" style="padding-left: 4.15%;" id = "sticky-sidebar">
+      <div class="col-1 position-fixed d-none d-sm-block pr-0 pt-5" style="padding-left: 4.15%;" id = "sticky-sidebar">
         <div class="">
           <ul class="list-unstyled">
             <li class = "pt-5">
@@ -51,12 +51,12 @@
               </a>
             </li>
             <li class = "pt-3">
-              <a class ="infolinks" href = "" aria-label = "email" target = "_blank" rel = "noreferrer">
+              <a class ="infolinks" href = "mailto: alfonso.canadyjr@gmail.com" aria-label = "email" target = "_blank" rel = "noreferrer">
                 <i data-feather="mail"></i>
               </a>
             </li>
             <li class = "pt-3">
-              <a class ="infolinks" href = "" aria-label = "resume" target = "_blank" rel = "noreferrer">
+              <a class ="infolinks" href = "/credits.html" aria-label = "resume" target = "_blank" rel = "noreferrer">
                 <i data-feather="file"></i>
               </a>
             </li>
@@ -65,22 +65,212 @@
       </div>
     </div>
 
-    <div class="col-9 offset-1" id = "main">
-      <div class="px-4 py-5 my-5">
-        <h1 class="display-3 fw-bold" style = "color:#2aa198">Alfonso Canady Jr.</h1>
+    <div class="col-10 offset-1" id = "about">
+      <section class="px-4 py-5 my-5">
+        <h1 class="display-3 fw-bold" style = "color:#2aa198">
+          Alfonso Canady Jr.
+        </h1>
         <h4 class="fw-bold" style = "color:rgb(197, 197, 197)" >Software Dev | Game Dev | Instructor</h1>
         <div class="col-lg-10">
           <p class="">I do a little of everything. I'm a software developer with a focus on simulation and game devlopment in Unity. I also have a strong passion for teaching and, while I don't teach full time at the moment, I still volunteer when possible to help nurture the next generation of devs.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-left">
-            <button type="button" onclick="window.open('/assets/Resume.pdf')" class="btn btn-success btn-sm px-4 gap-3">View My Resume</button>
+            <button  id="work" type="button" onclick="window.open('/assets/Resume.pdf')" class="btn btn-success btn-sm px-4 gap-3 shadow-none">View My Resume</button>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="px-4 mt-5 d-flex flex-row justify-content-between">
+        <div class = "pe-5">
+          <h2 class="text-light">
+            <a class = "infolinks" href = "https://www.cinilope.com/" target="_blank">Cinilope</a>
+          </h2>
+          <h6 class="text-success">Software Engineer</h6>
+          <p style = "text-align:justify">I've worked as the primary Software Engineer at<b> Cinilope</b> for the past two years. I focus on the design and development of simulations involving drones and other UAVs in Augmented and Virtual Reality.</p>
+          <p style = "text-align:justify">I also develop and maintain applications for Android and Windows Hololens using the Unity Engine.</p>
+        </div>
+        
+        <img class = "ps-5" style = "max-width: fit-content;" src = "assets/images/vrworkgraphic.svg" alt="cinilope work graphic"> 
+      </section>
+
+      <section class="px-4 d-flex container-fluid justify-content-between">
+        
+        <img class = "pe-5" style = "max-width: fit-content;" src = "assets/images/eduworkgraphic.svg" alt="codecrew work graphic">
+
+        <div class = "ps-5">
+          <h2 class="text-light pt-5">
+            <a class = "infolinks" href="https://code-crew.org" target="_blank">CodeCrew</a>
+          </h2>
+          <h6 class="text-success">Lead instructor</h6>
+          <p style = "text-align:justify">Codecrew was my first job in tech both during and after college. While there I worked as a Teaching Assistant, Assistant Instructor, Instructor, and finally as a Lead Instructor teaching K-12 as well as adult courses. I developed curriculum and taught CS courses ranging from summer game design classes using Unity to in school computer science classes covering the basics of programming. As a lead instructor I worked with the Codecrew CodeSchool, a coding bootcamp for adults, and taught/developed Front End Web Development curriculum. I am no longer employed by Codecrew but still volunteer for them from time to time. </p>
+        </div>
+        
+        
+      </section>
+
+      <section class="px-4 d-flex container-fluid justify-content-between">
+        
+        <div class = "pe-5">
+          <h2 class="text-light  pt-5">
+            <a class = "infolinks" href = "https://i3-corps.com/" target="_blank">Integration Innovation Inc</a>
+          </h2>
+          <h6 class="text-success">Unity Game Developer</h6>
+          <p style = "text-align:justify">i3 is my latest employer, there I work as a Junior Unity Dev and focus on training and simulation software for military personnel. I develop content with my team and work under my SCRUM master to produce produciton level, high quality content.</p>
+        </div>
+        
+        <img class = "ps-5" style = "max-width: fit-content;" src = "assets/images/i3workgraphic.svg" alt="codecrew work graphic">  
+      </section>
+
+      <section>
+        <h2 class = "text-light pt-4 display-5 fw-bold"  id= "projects">Projects</h2>
+        <hr>
+        <div class="row mt-5">
+          <div class="col">
+            <div class="cards text-white bg-dark mb-3" style="max-width: 20rem;">
+              <div class="card-heading d-flex">
+                
+                <svg class="text-success"xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+                
+                <div class = "ms-auto">
+                  <a class = "infolinks pe-2" href = "https://github.com/acanady/GameOfLifeUnity" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                      <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                  </a>
+
+                  <a class = "infolinks" href = "" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
+                      <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                      <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                    </svg>
+                  </a>
+                </div>  
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Game of Life Unity</h4>
+                <p class="card-text">As a way of challenging myself and also brushing up on Unity again I decided to implement the Game of Life. This version is made in Unity 3D and utilizes a set gameboard of varying size. It's still in development.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="cards text-white bg-dark mb-3" style="max-width: 20rem;">
+              <div class="card-heading d-flex">
+                
+                <svg class="text-success"xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+                
+                <div class = "ms-auto">
+                  <a class = "infolinks pe-2" href = "https://github.com/acanady/i3DevTest" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                      <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                  </a>
+
+                  <a class = "infolinks" href = "" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
+                      <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                      <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                    </svg>
+                  </a>
+                </div>  
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">i3 Developer Test</h4>
+                <p class="card-text">This is the developer test I completed as the first phase of the interview process that led to my Junior Unity Dev position with i3. The package they provided included a car model and all other functionality was created by me.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="cards text-white bg-dark mb-3" style="max-width: 20rem;">
+              <div class="card-heading d-flex">
+                
+                <svg class="text-success"xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+                
+                <div class = "ms-auto">
+                  <a class = "infolinks pe-2" href = "https://github.com/acanady/Challenges" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                      <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                  </a>
+
+                  <a class = "infolinks" href = "" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
+                      <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                      <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                    </svg>
+                  </a>
+                </div>  
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Coding Challenges</h4>
+                <p class="card-text pb-4">These are all of the coding challenges I've completed. It's a mix of leetcode/hackerank/projectEuler etc. This is both to practice for possible interviews as well as instruction purposes.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col">
+            <div class="cards text-white bg-dark mb-3" style="max-width: 20rem;">
+              <div class="card-heading d-flex">
+                
+                <svg class="text-success"xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+                
+                <div class = "ms-auto">
+                  <a class = "infolinks pe-2" href = "https://github.com/acanady/MagicDisks" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                      <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                  </a>
+
+                  <a class = "infolinks" href = "" aria-label = "GitHub" target = "_blank" rel = "noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
+                      <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                      <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                    </svg>
+                  </a>
+                </div>  
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Magical Disks</h4>
+                <p class="card-text pb-5">College senior seminar project; all code, 3D assets, and music were developed by me. Any other assets and sounds used were open source.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class = "container justify-content-center mt-5" id="contact">
+        <hr>
+        <div class = "col-lg-4 mx-auto">
+          <h2 class = "display-5 fw-bold text-light text-center">Contact Me</h2>
+          <h5 class = "text-center py-4">If you're interested in getting in touch either for hiring purposes or just to chat about nerdy stuff,  please feel free to reach out to me!</h5>
+          <button type="button" class="btn btn-secondary btn-lg d-lg-block mx-auto"><a style = "text-decoration:none; color:rgb(197, 197, 197);" href = "mailto: alfonso.canadyjr@gmail.com">Let's Chat</a></button>
+        </div>
+        
+      </section>
+
     </div>
   </div>
 
-  <h1>SITE UNDER CONSTRUCTION</h1>
-  <footer class = "mt-auto offset-1 ps-4">hosted with <i class = "love" data-feather="heart"></i>  by GitHub Pages</footer>
+  <div class="container offset-1"></div>
+
+  <footer class = "mt-5 offset-1 ps-4">
+    <p class = "m-0">Developed by <span class = text-success>Alfonso Canady</span></p> 
+    <p class = "m-0">Built with inspriation from <a class = "text-primary"style = "text-decoration:none" href = "https://brittanychiang.com/" target="_blank">Brittany Chiang</a></p>
+    <p>Hosted with <i class = "love" data-feather="heart"></i>  by GitHub Pages</p>
+    
+  </footer>
 
   
 

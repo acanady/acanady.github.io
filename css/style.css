@@ -9,7 +9,7 @@
 }
 
 .feather:hover{
-  transform:scale(1.2);
+  -webkit-transform:scale(1.2);
 }
 
 .infolinks{
@@ -17,10 +17,43 @@
   text-decoration:none;
 }
 
+.infolinks:hover{
+  transform:scale(1.2)
+}
+
 .love:hover{
   transform:scale(1);
+}
+
+.card-heading{
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(7, 54, 66, 0.25);
 }
 
 .love{
   fill:red;
 }
+
+.cards{
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(238, 232, 213, 0.125);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 43, 54, 0.95);
+  border-radius: 0.25rem;
+}
+
+.cards:hover{
+   transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
